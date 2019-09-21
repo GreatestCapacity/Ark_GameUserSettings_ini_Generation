@@ -100,9 +100,9 @@
 
             // 界面辅助类
             { key: 'ServerForceNoHud', description: '禁用HUD', value: 0, default_value: -1, checkbox: true },
-            { key: 'ServerCrosshair', description: '显示准星', value: 0, default_value: -1, checkbox: true },
-            { key: 'AllowThirdPersonPlayer', description: '允许使用第三人称视角', value: 0, default_value: -1, checkbox: true },
-            { key: 'ShowMapPlayerLocation', description: '在地图上显示玩家位置', value: 0, default_value: -1, checkbox: true },
+            { key: 'ServerCrosshair', description: '显示准星', value: 1, default_value: -1, checkbox: true },
+            { key: 'AllowThirdPersonPlayer', description: '允许使用第三人称视角', value: 1, default_value: -1, checkbox: true },
+            { key: 'ShowMapPlayerLocation', description: '在地图上显示玩家位置', value: 1, default_value: -1, checkbox: true },
             { key: 'ShowFloatingDamageText', description: '通过浮动文字显示伤害值', value: 0, default_value: 0, checkbox: true },
             { key: 'bUseCorpseLocator', description: '爱是一道光，浪死的地方。死亡后尸体上会有一道绿色光柱指引你找回自己的物品', value: 0, default_value: 0, checkbox: true },
             { key: 'DontAlwaysNotifyPlayerJoined', description: '当有玩家登陆服务器时，其他玩家不会收到提醒', value: 0, default_value: 0, checkbox: true },
@@ -140,7 +140,7 @@
             { key: 'TamedDinoResistanceMultiplier', description: '驯养生物承伤倍数，倍数越高，攻击行为对驯养生物造成的伤害越高', value: '1.000000', default_value: '1.000000', checkbox: false },
 
             // 数量
-            { key: 'MaxTamedDinos', description: '服务器中驯养生物的最大数量', value: '4000.000000', default_value: '4000.000000', checkbox: false },
+            { key: 'MaxTamedDinos', description: '服务器中驯养生物的最大数量', value: '5000.000000', default_value: '', checkbox: false },
             { key: 'DinoCountMultiplier', description: '恐龙总量倍数，倍数越高，游戏中的恐龙数量越多', value: '1.000000', default_value: '1.000000', checkbox: false },
             { key: 'MaxPersonalTamedDinos', description: '每个部落所能拥有的最大驯养生物数量', value: '500.000000', default_value: '500.000000', checkbox: true},
             { key: 'TheMaxStructuresInRange', description: 'Specifies the maximum number of structures that can be constructed within a certain (currently hard-coded) range.', value: '10500.000000', default_value: '', checkbox: false },
@@ -187,6 +187,7 @@
             { key: 'StructurePickupTimeAfterPlacement', description: '建筑物放置后多长时间内可以被捡起，单位为秒', value: '30.000000', default_value: '', checkbox: false },
             { key: 'StructurePickupHoldDuration', description: 'used to specify the quick-pickup hold duration, use 0 to disable and have instant pickup ', value: '0.500000', default_value: '', checkbox: false },
             { key: 'OxygenSwimSpeedStatMultiplier', description: 'Use this to set how swim speed is multiplied by level spent in oxygen.', value: '1.000000', default_value: '', checkbox: false },
+            { key: 'AllowIntegratedSPlusStructures', description: '', value: 1, default_value: -1, checkbox: false },
             { key: 'RCONPort', description: 'RCON的端口', value: '27020', default_value: '', checkbox: false },
             { key: 'RCONServerGameLogBuffer', description: '通过RCON发送的游戏日志记录的行数', value: '600', default_value: '', checkbox: false },
 
@@ -207,7 +208,9 @@
             { key: 'NPCNetworkStasisRangeScalePlayerCountStart', description: 'Wiki上未有相关解释', value: '70', default_value: '70', checkbox: false },
             { key: 'NPCNetworkStasisRangeScalePlayerCountEnd', description: 'Wiki上未有相关解释', value: '120', default_value: '120', checkbox: false },
             { key: 'NPCNetworkStasisRangeScalePercentEnd', description: 'Wiki上未有相关解释', value: '0.50', default_value: '0.50', checkbox: false },
-            { key: 'AllowHideDamageSourceFromLogs', description: '允许在部落日志中隐藏伤害来源', value: 0, default_value: 0, checkbox: true },
+            { key: 'AllowIntegratedSPlusStructures', description: '', value: 1, default_value: -1, checkbox: false },
+            { key: 'AllowHideDamageSourceFromLogs', description: '允许在部落日志中隐藏伤害来源', value: 1, default_value: -1, checkbox: true },
+            { key: 'KickIdlePlayersPeriod', description: '', value: '3600.000000', default_value: '', checkbox: false },
             { key: 'RandomSupplyCratePoints', description: '空投补给箱降落在随机位置。注意：这项设置的启用会造成仙境DLC出现bug', value: 0, default_value: 0, checkbox: true },
             { key: 'ClampResourceHarvestDamage', description: '使恐龙在采集资源时仅对采集的资源造成伤害。', value: 0, default_value: 0, checkbox: true },
           ],
