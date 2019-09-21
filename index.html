@@ -40,38 +40,38 @@
     <button type="button" class="btn btn-primary btn-lg btn-block" v-on:click="btn_click">下载GameUserSettings.ini文件</button>
   </div>
   <div class="row" id="explain">
-    <h2>使用方法与须知</h2>
-    <ol>
-      <li>Linux平台的<code>GameUserSettings.ini</code>文件存放在<code>ShooterGame/Saved/Config/LinuxServer/</code>目录下，Windows的存放在<code>ShooterGame/Saved/Config/WindowsServer/</code>目录下；</li>
-      <li>在本页面生成了<code>GameUserSettings.ini</code>文件后，不要着急替换文件，先把原来的文件存一个备份再将从本页面下载的文件复制进去；</li>
-      <li>在使用过程中关闭网页将无法恢复已修改的信息，还请注意；</li>
-      <li>本页面内的所有链接均已<code>target="_blank"</code>，可以放心点击，不会覆盖当前页面造成信息丢失；</li>
-      <li>大多数配置项，如果将输入框的内容置空，或者不对缺省值进行修改，该项就不会被写入到<code>GameUserSettings.ini</code>文件中，游戏会自动对该项使用缺省值。</li>
-    </ol>
-  <div>
-    <h2>反馈</h2>
-    <p>
-      如果本页面的内容存在错误，或您对本页面有改进意见，欢迎发起<a href="https://github.com/GreatestCapacity/Ark_GameUserSettings_ini_Generation/issues" target="_blank">Issue</a>进行讨论，或发送邮件至<a href="mailto:greatestcapacity@mail.com">GreatestCapacity@mail.com</a>，非常感谢您的支持。
-    </p>
-  </div>
-  <div>
-    <h2>未来的计划</h2>
-    <ol>
-      <li>在每个配置项前加一个按钮，可以手动隐藏掉某配置项，方便将自己不使用的配置项隐藏掉，更好地将精力集中于自己所要使用的配置项上；</li>
-      <li>允许用户上传自己的<code>GameUserSettings.ini</code>文件，JavaScript读取并解析，然后用户可以在自己原本的配置上进行修改；</li>
-      <li>一个<code>GameUserSettings.ini</code>文件生成器似乎还不足以将我的服务器打造得充满特色，我还打算写一个<code>Game.ini</code>文件生成器</li>
-    </ol>
-  </div>
-  <div>
-    <h2>说明</h2>
-    <p class="text">
-      这个<code>GameUserSettings.ini</code>文件生成器是受<a href="https://ark.gamepedia.com/Server_Configuration" target="_blank">Server Configuration - Official ARK: Survival Evolved Wiki</a>
-      和<a href="https://ini.arkforum.de/index.php" target="_blank">GameUserSettings.ini Generator 4 ATLAS (Version: v218.31) & ARK (Version: 298.41)</a>的启发而编写的，
-      原资料与工具没有中文支持，故而开发一中文版，方便中文玩家使用。
-      编写过程主要参考的是<i>Official ARK: Survival Evolved Wiki</i>中的内容，页面内使用了<a href="https://github.com/twbs/bootstrap" target="_blank">Bootstrap</a>、<a href="https://github.com/eligrey/FileSaver.js" target="_blank">Vue.js</a>与<a href="https://github.com/eligrey/FileSaver.js" target="_blank">FileSaver.js</a>。
-      <i>Official ARK: Survival Evolved</i>的内容采用了<a href="https://creativecommons.org/licenses/by-nc-sa/3.0/" target="_blank">CC BY-NC-SA 3.0</a>协议，
-      因此本页面内容也采用<a href="https://creativecommons.org/licenses/by-nc-sa/3.0/" target="_blank">CC BY-NC-SA 3.0</a>协议。此外，本项目相关代码采用GPL v3.0协议。
-    </p>
+    <div>
+      <h2>使用方法与须知</h2>
+      <ol>
+        <li>Linux平台的<code>GameUserSettings.ini</code>文件存放在<code>ShooterGame/Saved/Config/LinuxServer/</code>目录下，Windows的存放在<code>ShooterGame/Saved/Config/WindowsServer/</code>目录下；</li>
+        <li>在本页面生成了<code>GameUserSettings.ini</code>文件后，不要着急替换文件，先把原来的文件存一个备份再将从本页面下载的文件复制进去；</li>
+        <li>在使用过程中关闭网页将无法恢复已修改的信息，还请注意；</li>
+        <li>本页面内的所有链接均已<code>target="_blank"</code>，可以放心点击，不会覆盖当前页面造成信息丢失；</li>
+        <li>大多数配置项，如果将输入框的内容置空，或者不对缺省值进行修改，该项就不会被写入到<code>GameUserSettings.ini</code>文件中，游戏会自动对该项使用缺省值。</li>
+      </ol>
+
+      <h2>反馈</h2>
+      <p>
+        如果本页面的内容存在错误，或您对本页面有改进意见，欢迎发起<a href="https://github.com/GreatestCapacity/Ark_GameUserSettings_ini_Generation/issues" target="_blank">Issue</a>进行讨论，或发送邮件至<a href="mailto:greatestcapacity@mail.com">GreatestCapacity@mail.com</a>，非常感谢您的支持。
+      </p>
+
+      <h2>未来的计划</h2>
+      <ol>
+        <li>在每个配置项前加一个按钮，可以手动隐藏掉某配置项，方便将自己不使用的配置项隐藏掉，更好地将精力集中于自己所要使用的配置项上；</li>
+        <li>允许用户上传自己的<code>GameUserSettings.ini</code>文件，JavaScript读取并解析，然后用户可以在自己原本的配置上进行修改；</li>
+        <li>一个<code>GameUserSettings.ini</code>文件生成器似乎还不足以将我的服务器打造得充满特色，我还打算写一个<code>Game.ini</code>文件生成器</li>
+      </ol>
+
+      <h2>说明</h2>
+      <p>
+        这个<code>GameUserSettings.ini</code>文件生成器是受<a href="https://ark.gamepedia.com/Server_Configuration" target="_blank">Server Configuration - Official ARK: Survival Evolved Wiki</a>
+        和<a href="https://ini.arkforum.de/index.php" target="_blank">GameUserSettings.ini Generator 4 ATLAS (Version: v218.31) & ARK (Version: 298.41)</a>的启发而编写的，
+        原资料与工具没有中文支持，故而开发一中文版，方便中文玩家使用。
+        编写过程主要参考的是<i>Official ARK: Survival Evolved Wiki</i>中的内容，页面内使用了<a href="https://github.com/twbs/bootstrap" target="_blank">Bootstrap</a>、<a href="https://github.com/eligrey/FileSaver.js" target="_blank">Vue.js</a>与<a href="https://github.com/eligrey/FileSaver.js" target="_blank">FileSaver.js</a>。
+        <i>Official ARK: Survival Evolved</i>的内容采用了<a href="https://creativecommons.org/licenses/by-nc-sa/3.0/" target="_blank">CC BY-NC-SA 3.0</a>协议，
+        因此本页面内容也采用<a href="https://creativecommons.org/licenses/by-nc-sa/3.0/" target="_blank">CC BY-NC-SA 3.0</a>协议。此外，本项目相关代码采用GPL v3.0协议。
+      </p>
+    </div>
   </div>
 </div>
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
@@ -88,7 +88,7 @@
           block_name: '[ServerSettings]',
           items: [
             // 基础设置
-            { key: 'ServerPVE', description: '禁用PVP（玩家互怼），启用PVE（只能玩家合作怼电脑）', value: 0, default_value: 0, checkbox: true },
+            { key: 'ServerPVE', description: '启用PVE（只能玩家合作怼电脑），禁用PVP（玩家互怼）', value: 0, default_value: 0, checkbox: true },
             { key: 'ServerHardcore', description: '硬核模式，玩家每次死亡后等级都会掉回1级', value: 0, default_value: 0, checkbox: true },
             { key: 'DifficultyOffset', description: '指定服务器的难度等级，影响生物等级与战利品品质，取值范围[0, 1]，详细信息参见<a href="https://ark.gamepedia.com/Difficulty" target="_blank">Difficulty - Official ARK: Survival Evolved Wiki</a>', value: '0.200000', default_value: '0.200000', checkbox: false },
             { key: 'AutoSavePeriodMinutes', description: '设置服务器自动保存游戏存档的时间间隔，单位为分钟', value: '15.000000', default_value: '', checkbox: false },
@@ -143,8 +143,8 @@
             { key: 'MaxTamedDinos', description: '服务器中驯养生物的最大数量', value: '4000.000000', default_value: '4000.000000', checkbox: false },
             { key: 'DinoCountMultiplier', description: '恐龙总量倍数，倍数越高，游戏中的恐龙数量越多', value: '1.000000', default_value: '1.000000', checkbox: false },
             { key: 'MaxPersonalTamedDinos', description: '每个部落所能拥有的最大驯养生物数量', value: '500.000000', default_value: '500.000000', checkbox: true},
-            { key: 'TheMaxStructuresInRange', description: '（建议用默认值，我也没弄懂这个选项的作用）指定一个区域内最多可以创建多少建筑（Specifies the maximum number of structures that can be constructed within a certain (currently hard-coded) range.）', value: '10500.000000', default_value: '', checkbox: false },
-            { key: 'ItemStackSizeMultiplier', description: '单元格物品堆叠数量的倍数，倍数越高，单元格内能够堆叠的物品数量越多', value: '1.000000', default_value: '', checkbox: false },
+            { key: 'TheMaxStructuresInRange', description: 'Specifies the maximum number of structures that can be constructed within a certain (currently hard-coded) range.', value: '10500.000000', default_value: '', checkbox: false },
+            { key: 'ItemStackSizeMultiplier', description: 'allow increasing or decreasing global item stack size, this means all default stacksizes will be multiplied by the value given', value: '1.000000', default_value: '', checkbox: false },
             { key: 'MaxPlatformSaddleStructureLimit', description: '方舟中船/平台鞍生物的最大数量', value: '100.000000', default_value: '100.000000', checkbox: false },
             { key: 'PerPlatformMaxStructuresMultiplier', description: '平台鞍建筑上限倍数，倍数越高，平台鞍上可以放置的建筑物数量越多', value: '1.000000', default_value: '', checkbox: false },
             { key: 'PlatformSaddleBuildAreaBoundsMultiplier', description: '平台鞍建筑区域面积倍数，倍数越高，平台鞍可扩建的面积就越大', value: '1.000000', default_value: '', checkbox: false },
@@ -169,6 +169,7 @@
             { key: 'PreventOfflinePvPInterval', description: 'PVP，下线保护等待时间，单位为秒，', value: '0.010000', default_value: '', checkbox: false},
 
             // 杂项
+            { key: 'AllowHitMarkers', description: '启用HitMarkers效果', value: 1, default_value: -1, checkbox: true},
             { key: 'DisableImprintDinoBuff', description: '禁用恐龙留痕增益', value: 0, default_value: 0, checkbox: true},
             { key: 'AllowAnyoneBabyImprintCuddle', description: '允许他人完成留痕任务', value: 0, default_value: 0, checkbox: true},
             { key: 'PreventDiseases', description: '禁用疾病机制', value: 0, default_value: 0, checkbox: true },
@@ -185,7 +186,7 @@
             { key: 'EnableExtraStructurePreventionVolumes', description: '扩大资源点附近禁造区域的大小，使用后可以完全禁止在特定资源点放置建筑物，例如孤岛中的山峰', value: 0, default_value: 0, checkbox: true },
             { key: 'StructurePickupTimeAfterPlacement', description: '建筑物放置后多长时间内可以被捡起，单位为秒', value: '30.000000', default_value: '', checkbox: false },
             { key: 'StructurePickupHoldDuration', description: 'used to specify the quick-pickup hold duration, use 0 to disable and have instant pickup ', value: '0.500000', default_value: '', checkbox: false },
-            { key: 'OxygenSwimSpeedStatMultiplier', description: '', value: '1.000000', default_value: '', checkbox: false },
+            { key: 'OxygenSwimSpeedStatMultiplier', description: 'Use this to set how swim speed is multiplied by level spent in oxygen.', value: '1.000000', default_value: '', checkbox: false },
             { key: 'RCONPort', description: 'RCON的端口', value: '27020', default_value: '', checkbox: false },
             { key: 'RCONServerGameLogBuffer', description: '通过RCON发送的游戏日志记录的行数', value: '600', default_value: '', checkbox: false },
 
@@ -233,8 +234,157 @@
               }
             }
           });
+          text += '\n';
+
+          if (block.block_name == '[ServerSettings]') {
+            text += '[/Script/ShooterGame.ShooterGameUserSettings]\n'
+            + 'MasterAudioVolume=1.000000\n'
+            + 'MusicAudioVolume=1.000000\n'
+            + 'SFXAudioVolume=1.000000\n'
+            + 'VoiceAudioVolume=1.000000\n'
+            + 'UIScaling=1.000000\n'
+            + 'UIQuickbarScaling=0.650000\n'
+            + 'CameraShakeScale=0.650000\n'
+            + 'bFirstPersonRiding=False\n'
+            + 'bThirdPersonPlayer=False\n'
+            + 'bShowStatusNotificationMessages=True\n'
+            + 'TrueSkyQuality=0.000000\n'
+            + 'FOVMultiplier=1.000000\n'
+            + 'GroundClutterDensity=0.000000\n'
+            + 'bFilmGrain=False\n'
+            + 'bMotionBlur=False\n'
+            + 'bUseDistanceFieldAmbientOcclusion=False\n'
+            + 'bUseSSAO=False\n'
+            + 'bShowChatBox=True\n'
+            + 'bCameraViewBob=True\n'
+            + 'bInvertLookY=False\n'
+            + 'bFloatingNames=True\n'
+            + 'bChatBubbles=True\n'
+            + 'bHideServerInfo=False\n'
+            + 'bJoinNotifications=False\n'
+            + 'bCraftablesShowAllItems=False\n'
+            + 'bLocalInventoryItemsShowAllItems=False\n'
+            + 'bLocalInventoryCraftingShowAllItems=True\n'
+            + 'bRemoteInventoryItemsShowAllItems=False\n'
+            + 'bRemoteInventoryCraftingShowAllItems=False\n'
+            + 'bRemoteInventoryShowEngrams=True\n'
+            + 'LookLeftRightSensitivity=1.000000\n'
+            + 'LookUpDownSensitivity=1.000000\n'
+            + 'GraphicsQuality=1\n'
+            + 'ActiveLingeringWorldTiles=1\n'
+            + 'ClientNetQuality=3\n'
+            + 'LastServerSearchType=0\n'
+            + 'LastServerSort=2\n'
+            + 'LastPVESearchType=-1\n'
+            + 'LastDLCTypeSearchType=-1\n'
+            + 'LastServerSortAsc=True\n'
+            + 'LastAutoFavorite=True\n'
+            + 'LastServerSearchHideFull=False\n'
+            + 'LastServerSearchProtected=False\n'
+            + 'HideItemTextOverlay=True\n'
+            + 'bQuickToggleItemNames=True\n'
+            + 'bDistanceFieldShadowing=False\n'
+            + 'LODScalar=0.780000\n'
+            + 'bToggleToTalk=False\n'
+            + 'HighQualityMaterials=True\n'
+            + 'HighQualitySurfaces=True\n'
+            + 'bTemperatureF=False\n'
+            + 'bDisableTorporEffect=False\n'
+            + 'bChatShowSteamName=False\n'
+            + 'bChatShowTribeName=True\n'
+            + 'bReverseTribeLogOrder=False\n'
+            + 'EmoteKeyBind1=0\n'
+            + 'EmoteKeyBind2=0\n'
+            + 'bNoBloodEffects=False\n'
+            + 'bLowQualityVFX=False\n'
+            + 'bSpectatorManualFloatingNames=False\n'
+            + 'bSuppressAdminIcon=False\n'
+            + 'bUseSimpleDistanceMovement=False\n'
+            + 'bDisableMeleeCameraSwingAnims=False\n'
+            + 'bHighQualityAnisotropicFiltering=False\n'
+            + 'bUseLowQualityLevelStreaming=True\n'
+            + 'bPreventInventoryOpeningSounds=False\n'
+            + 'bPreventItemCraftingSounds=False\n'
+            + 'bPreventHitMarkers=False\n'
+            + 'bPreventCrosshair=False\n'
+            + 'bPreventColorizedItemNames=False\n'
+            + 'bHighQualityLODs=False\n'
+            + 'bExtraLevelStreamingDistance=False\n'
+            + 'bEnableColorGrading=True\n'
+            + 'DOFSettingInterpTime=0.000000\n'
+            + 'bDisableBloom=False\n'
+            + 'bDisableLightShafts=False\n'
+            + 'LastJoinedSessionPerCategory=" "\n'
+            + 'LastJoinedSessionPerCategory=" "\n'
+            + 'LastJoinedSessionPerCategory=" "\n'
+            + 'LastJoinedSessionPerCategory=" "\n'
+            + 'LastJoinedSessionPerCategory=" "\n'
+            + 'LastJoinedSessionPerCategory=" "\n'
+            + 'LastJoinedSessionPerCategory=" "\n'
+            + 'LastJoinedSessionPerCategory=" "\n'
+            + 'LastJoinedSessionPerCategory=" "\n'
+            + 'bDisableMenuTransitions=False\n'
+            + 'bEnableInventoryItemTooltips=True\n'
+            + 'bRemoteInventoryShowCraftables=False\n'
+            + 'bNoTooltipDelay=False\n'
+            + 'LocalItemSortType=0\n'
+            + 'LocalCraftingSortType=0\n'
+            + 'RemoteItemSortType=0\n'
+            + 'RemoteCraftingSortType=0\n'
+            + 'VersionMetaTag=1\n'
+            + 'ShowExplorerNoteSubtitles=False\n'
+            + 'DisableMenuMusic=False\n'
+            + 'DisableDefaultCharacterItems=False\n'
+            + 'bHideFloatingPlayerNames=False\n'
+            + 'bHideGamepadItemSelectionModifier=False\n'
+            + 'bToggleExtendedHUDInfo=False\n'
+            + 'PlayActionWheelClickSound=True\n'
+            + 'MaxAscensionLevel=0\n'
+            + 'bHostSessionHasBeenOpened=False\n'
+            + 'bForceTPVCameraOffset=False\n'
+            + 'bDisableTPVCameraInterpolation=False\n'
+            + 'bFPVClimbingGear=False\n'
+            + 'bFPVGlidingGear=False\n'
+            + 'Gamma1=2.200000\n'
+            + 'Gamma2=3.000000\n'
+            + 'AmbientSoundVolume=1.000000\n'
+            + 'bUseVSync=False\n'
+            + 'MacroCtrl0=\n'
+            + 'MacroCtrl1=\n'
+            + 'MacroCtrl2=\n'
+            + 'MacroCtrl3=\n'
+            + 'MacroCtrl4=\n'
+            + 'MacroCtrl5=\n'
+            + 'MacroCtrl6=\n'
+            + 'MacroCtrl7=\n'
+            + 'MacroCtrl8=\n'
+            + 'MacroCtrl9=\n'
+            + 'ResolutionSizeX=1280\n'
+            + 'ResolutionSizeY=720\n'
+            + 'LastUserConfirmedResolutionSizeX=1280\n'
+            + 'LastUserConfirmedResolutionSizeY=720\n'
+            + 'WindowPosX=-1\n'
+            + 'WindowPosY=-1\n'
+            + 'bUseDesktopResolutionForFullscreen=False\n'
+            + 'FullscreenMode=2\n'
+            + 'LastConfirmedFullscreenMode=2\n'
+            + 'Version=5\n'
+            + '\n'
+            + '[ScalabilityGroups]\n'
+            + 'sg.ResolutionQuality=100\n'
+            + 'sg.ViewDistanceQuality=3\n'
+            + 'sg.AntiAliasingQuality=3\n'
+            + 'sg.ShadowQuality=3\n'
+            + 'sg.PostProcessQuality=3\n'
+            + 'sg.TextureQuality=3\n'
+            + 'sg.EffectsQuality=3\n'
+            + 'sg.TrueSkyQuality=3\n'
+            + 'sg.GroundClutterQuality=3\n'
+            + 'sg.IBLQuality=1\n'
+            + 'sg.HeightFieldShadowQuality=3\n'
+            + 'sg.GroundClutterRadius=10000\n\n';
+          }
         });
-        console.log(text)
         var blob = new Blob([text], {type: "text/plain;charset=utf-8"});
         saveAs(blob, "GameUserSettings.ini");
       },
