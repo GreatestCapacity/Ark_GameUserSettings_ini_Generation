@@ -8,19 +8,16 @@
 <body>
 <div class="container">
   <div class="row">
-    <h1>方舟生存进化GameUserSettings.ini文件生成器</h1>
-  </div>
-  <div class="row">
-    <h2>简介与免责声明</h2>
-    <p class="text">本工具是受<a href="https://ark.gamepedia.com/Server_Configuration">Server Configuration - Official ARK: Survival Evolved Wiki</a>和<a href="https://ini.arkforum.de/index.php">GameUserSettings.ini Generator 4 ATLAS (Version: v218.31) & ARK (Version: 298.41)</a>的启发而被开发出来的，原资料与工具没有中文支持，故而开发一中文版，以便中文玩家使用。<a href="https://ark.gamepedia.com/Server_Configuration">Server Configuration - Official ARK: Survival Evolved Wiki</a>页面的内容采用了<a href="https://creativecommons.org/licenses/by-nc-sa/3.0/">CC BY-NC-SA 3.0</a>协议，<a href="https://ini.arkforum.de/index.php">GameUserSettings.ini Generator 4 ATLAS (Version: v218.31) & ARK (Version: 298.41)</a>受DMCA保护。本页面参考了<a href="https://ark.gamepedia.com/Server_Configuration">Server Configuration - Official ARK: Survival Evolved Wiki</a>中的内容，独立编写，不用于商业用途，未使用<a href="https://ini.arkforum.de/index.php">GameUserSettings.ini Generator 4 ATLAS (Version: v218.31) & ARK (Version: 298.41)</a>中的代码。</p>
+    <h1>方舟生存进化<code>GameUserSettings.ini</code>文件生成器</h1>
+    <p>关于本页面的详细信息以及使用方法，请参阅页面底部的<a href="#explain">说明</a>。</p>
   </div>
   <div class="row" id="config">
     <table class="table table-hover">
       <thead>
         <tr>
-          <th scope="col" width="30%">键</th>
+          <th scope="col" width="29%">键</th>
           <th scope="col" width="60%">解释</th>
-          <th scope="col" width="10%">值</th>
+          <th scope="col" width="11%">值</th>
         </tr>
       </thead>
       <tbody>
@@ -42,6 +39,40 @@
     </table>
     <button type="button" class="btn btn-primary btn-lg btn-block" v-on:click="btn_click">下载GameUserSettings.ini文件</button>
   </div>
+  <div class="row" id="explain">
+    <h2>使用方法与须知</h2>
+    <ol>
+      <li>Linux平台的<code>GameUserSettings.ini</code>文件存放在<code>ShooterGame/Saved/Config/LinuxServer/</code>目录下，Windows的存放在<code>ShooterGame/Saved/Config/WindowsServer/</code>目录下；</li>
+      <li>在本页面生成了<code>GameUserSettings.ini</code>文件后，不要着急替换文件，先把原来的文件存一个备份再将从本页面下载的文件复制进去；</li>
+      <li>在使用过程中关闭网页将无法恢复已修改的信息，还请注意；</li>
+      <li>本页面内的所有链接均已<code>target="_blank"</code>，可以放心点击，不会覆盖当前页面造成信息丢失；</li>
+      <li>大多数配置项，如果将输入框的内容置空，或者不对缺省值进行修改，该项就不会被写入到<code>GameUserSettings.ini</code>文件中，游戏会自动对该项使用缺省值。</li>
+    </ol>
+  <div>
+    <h2>反馈</h2>
+    <p>
+      如果本页面的内容存在错误，或您对本页面有改进意见，欢迎发起<a href="https://github.com/GreatestCapacity/Ark_GameUserSettings_ini_Generation/issues" target="_blank">Issue</a>进行讨论，或发送邮件至<a href="mailto:greatestcapacity@mail.com">GreatestCapacity@mail.com</a>，非常感谢您的支持。
+    </p>
+  </div>
+  <div>
+    <h2>未来的计划</h2>
+    <ol>
+      <li>在每个配置项前加一个按钮，可以手动隐藏掉某配置项，方便将自己不使用的配置项隐藏掉，更好地将精力集中于自己所要使用的配置项上；</li>
+      <li>允许用户上传自己的<code>GameUserSettings.ini</code>文件，JavaScript读取并解析，然后用户可以在自己原本的配置上进行修改；</li>
+      <li>一个<code>GameUserSettings.ini</code>文件生成器似乎还不足以将我的服务器打造得充满特色，我还打算写一个<code>Game.ini</code>文件生成器</li>
+    </ol>
+  </div>
+  <div>
+    <h2>说明</h2>
+    <p class="text">
+      这个<code>GameUserSettings.ini</code>文件生成器是受<a href="https://ark.gamepedia.com/Server_Configuration" target="_blank">Server Configuration - Official ARK: Survival Evolved Wiki</a>
+      和<a href="https://ini.arkforum.de/index.php" target="_blank">GameUserSettings.ini Generator 4 ATLAS (Version: v218.31) & ARK (Version: 298.41)</a>的启发而编写的，
+      原资料与工具没有中文支持，故而开发一中文版，方便中文玩家使用。
+      编写过程主要参考的是<i>Official ARK: Survival Evolved Wiki</i>中的内容，页面内使用了<a href="https://github.com/twbs/bootstrap" target="_blank">Bootstrap</a>、<a href="https://github.com/eligrey/FileSaver.js" target="_blank">Vue.js</a>与<a href="https://github.com/eligrey/FileSaver.js" target="_blank">FileSaver.js</a>。
+      <i>Official ARK: Survival Evolved</i>的内容采用了<a href="https://creativecommons.org/licenses/by-nc-sa/3.0/" target="_blank">CC BY-NC-SA 3.0</a>协议，
+      因此本页面内容也采用<a href="https://creativecommons.org/licenses/by-nc-sa/3.0/" target="_blank">CC BY-NC-SA 3.0</a>协议。此外，本项目相关代码采用GPL v3.0协议。
+    </p>
+  </div>
 </div>
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
@@ -57,106 +88,118 @@
           block_name: '[ServerSettings]',
           items: [
             // 基础设置
-            { key: 'serverPVE', description: '禁用PVP（玩家互怼），启用PVE（只能玩家合作怼电脑）', value: 0, default_value: 0, checkbox: true },
-            { key: 'serverHardcore', description: '硬核模式，玩家每次死亡后等级都会掉回1级', value: 0, default_value: 0, checkbox: true },
-            { key: 'DifficultyOffset', description: '指定服务器的困难等级，详细信息参见<a href="https://ark.gamepedia.com/Difficulty" target="_blank">Difficulty - Official ARK: Survival Evolved Wiki</a>', value: '0.20000', default_value: '0.20000', checkbox: false },
-            { key: 'AutoSavePeriodMinutes', description: '设置服务器自动保存游戏存档的时间间隔，单位为分钟', value: '15', default_value: '15', checkbox: false },
+            { key: 'ServerPVE', description: '禁用PVP（玩家互怼），启用PVE（只能玩家合作怼电脑）', value: 0, default_value: 0, checkbox: true },
+            { key: 'ServerHardcore', description: '硬核模式，玩家每次死亡后等级都会掉回1级', value: 0, default_value: 0, checkbox: true },
+            { key: 'DifficultyOffset', description: '指定服务器的难度等级，影响生物等级与战利品品质，取值范围[0, 1]，详细信息参见<a href="https://ark.gamepedia.com/Difficulty" target="_blank">Difficulty - Official ARK: Survival Evolved Wiki</a>', value: '0.200000', default_value: '0.200000', checkbox: false },
+            { key: 'AutoSavePeriodMinutes', description: '设置服务器自动保存游戏存档的时间间隔，单位为分钟', value: '15.000000', default_value: '', checkbox: false },
             { key: 'BanListURL', description: '使用指定的玩家封禁列表来阻止恶意玩家加入服务器', value: 'http://arkdedicated.com/banlist.txt', default_value: 'http://arkdedicated.com/banlist.txt', checkbox: false },
-            { key: 'AdminLogging', description: '将管理员使用的命令发送到聊天窗口', value: 0, default_value: 0, checkbox: true },
+            { key: 'AdminLogging', description: '输出管理员使用的命令到聊天窗口', value: 0, default_value: 0, checkbox: true },
             { key: 'ServerPassword', description: '服务器连接密码', value: '', default_value: '', checkbox: false },
             { key: 'ServerAdminPassword', description: '服务器管理员密码', value: '', default_value: '', checkbox: false },
             { key: 'SpectatorPassword', description: '如果设置该密码，则允许玩家切换至观众身份，在游戏中的控制台使用<b>requestspectator 密码</b>和<b>stopspectating</b>命令可进入和退出观众模式', value: '', default_value: '', checkbox: false },
 
             // 界面辅助类
-            { key: 'serverForceNoHud', description: '禁用HUD', value: 0, default_value: 0, checkbox: true },
-            { key: 'ServerCrosshair', description: '允许使用准星', value: 0, default_value: 0, checkbox: true },
-            { key: 'allowThirdPersonPlayer', description: '允许使用第三人称视角', value: 0, default_value: 0, checkbox: true },
-            { key: 'ShowMapPlayerLocation', description: '在地图上显示玩家位置', value: 0, default_value: 0, checkbox: true },
+            { key: 'ServerForceNoHud', description: '禁用HUD', value: 0, default_value: -1, checkbox: true },
+            { key: 'ServerCrosshair', description: '显示准星', value: 0, default_value: -1, checkbox: true },
+            { key: 'AllowThirdPersonPlayer', description: '允许使用第三人称视角', value: 0, default_value: -1, checkbox: true },
+            { key: 'ShowMapPlayerLocation', description: '在地图上显示玩家位置', value: 0, default_value: -1, checkbox: true },
             { key: 'ShowFloatingDamageText', description: '通过浮动文字显示伤害值', value: 0, default_value: 0, checkbox: true },
             { key: 'bUseCorpseLocator', description: '爱是一道光，浪死的地方。死亡后尸体上会有一道绿色光柱指引你找回自己的物品', value: 0, default_value: 0, checkbox: true },
-            { key: 'alwaysNotifyPlayerJoined', description: '当有玩家登陆服务器时，其他玩家会收到提醒', value: 0, default_value: 0, checkbox: true },
-            { key: 'alwaysNotifyPlayerLeft', description: '当有玩家离开服务器时，其他玩家会收到提醒', value: 0, default_value: 0, checkbox: true },
-            { key: 'globalVoiceChat', description: '允许全服语音聊天，否则语音会受距离限制，只有玩家离得足够近或有<a target="_blank" href="https://ark.gamepedia.com/Radio">无线电</a>才能听到对方的语音', value: 0, default_value: 0, checkbox: true },
-            { key: 'proximityChat', description: '文字消息有距离限制，只有玩家离得足够近才能看到对方的消息', value: 0, default_value: 0, checkbox: true },
+            { key: 'DontAlwaysNotifyPlayerJoined', description: '当有玩家登陆服务器时，其他玩家不会收到提醒', value: 0, default_value: 0, checkbox: true },
+            { key: 'AlwaysNotifyPlayerLeft', description: '当有玩家离开服务器时，其他玩家会收到提醒', value: 0, default_value: 0, checkbox: true },
+            { key: 'GlobalVoiceChat', description: '启用全服语音聊天，语音聊天会被广播给方舟中的所有玩家，否则语音会受距离限制，只有玩家离得足够近才能听到对方', value: 0, default_value: 0, checkbox: true },
+            { key: 'ProximityChat', description: '文字消息有距离限制，只有玩家离得足够近才能看到对方的消息', value: 0, default_value: 0, checkbox: true },
             { key: 'DisableWeatherFog', description: '禁用雾天', value: 0, default_value: 0, checkbox: true },
 
             // 速率
-            { key: 'XPMultiplier', description: '经验获取倍率，缺省值为1.0倍，即单机模式与官服所使用的倍数，倍数越大，玩家每次行动获得的经验就越多', value: '1.00000', default_value: '1.00000', checkbox: false },
-            { key: 'TamingSpeedMultiplier', description: '生物驯服速率，该值为倍数，倍数越大，驯服生物所需时间就越短', value: '1.00000', default_value: '1.00000', checkbox: false },
-            { key: 'HarvestAmountMultiplier', description: '采集倍率，如砍树、采果子、分解尸体等，倍数越大，每次采集获得的资源数量越多', value: '1.00000', default_value: '1.00000', checkbox: false },
-            { key: 'HarvestHealthMultiplier', description: '被采集对象的“生命值”，如树木、石头、尸体等，该值为倍数，倍数越大，你需要挥斧子/镐子/拳头的次数就越多', value: '1.00000', default_value: '1.00000', checkbox: false },
-            { key: 'ResourcesRespawnPeriodMultiplier', description: '资源重生速率，如树木、石头、灌木等，该值为倍数，倍数越低，资源重生越快', value: '1.00000', default_value: '1.00000', checkbox: false },
-            { key: 'DayCycleSpeedScale', description: '昼夜交替的速度，该值为倍数，缺省值为1.0倍，即单机模式与官服所使用的倍数，倍数越大昼夜交替速度越快。1.0倍时，现实中1分钟大体对应游戏中的28分钟，因此，如果希望游戏中的昼夜交替周期与现实相似（1昼夜=24小时），可将该值设置为0.035', value: '1.00000', default_value: '1.00000', checkbox: false },
-            { key: 'NightTimeSpeedScale', description: '夜晚时间流逝的速度，该值为倍数，决定了夜间时长，与DayTimeSpeedScale相关，倍数越小夜晚的时间就越长', value: '1.00000', default_value: '1.00000', checkbox: false },
-            { key: 'DayTimeSpeedScale', description: '白天时间流逝的速度，该值为倍数，决定了日间时长，与NightTimeSpeedScale相关，倍数越小白天的时间就越长', value: '1.00000', default_value: '1.00000', checkbox: false },
-            { key: 'TribeNameChangeCooldown', description: '再次修改部落名称所需的冷却时间，单位为分钟', value: '15', default_value: '15', checkbox: false },
+            { key: 'XPMultiplier', description: '经验获取倍率，缺省值为1.0倍，即单机模式与官服所使用的倍数，倍数越大，玩家每次行动获得的经验就越多', value: '1.000000', default_value: '1.000000', checkbox: false },
+            { key: 'TamingSpeedMultiplier', description: '生物驯服速率，该值为倍数，倍数越大，驯服生物所需时间就越短', value: '1.000000', default_value: '1.000000', checkbox: false },
+            { key: 'HarvestAmountMultiplier', description: '采集倍率，如砍树、采果子、分解尸体等，倍数越大，每次采集获得的资源数量越多', value: '1.000000', default_value: '1.000000', checkbox: false },
+            { key: 'HarvestHealthMultiplier', description: '被采集对象的“生命值”，如树木、石头、尸体等，该值为倍数，倍数越大，你需要挥斧子/镐子/拳头的次数就越多，可以采集到更多资源', value: '1.000000', default_value: '1.000000', checkbox: false },
+            { key: 'ResourcesRespawnPeriodMultiplier', description: '资源重生速率，如树木、石头、灌木等，该值为倍数，倍数越小，资源重生越快', value: '1.000000', default_value: '1.000000', checkbox: false },
+            { key: 'DayCycleSpeedScale', description: '昼夜交替速度，该值为倍数，缺省值为1.0倍，即单机模式与官服所使用的倍数，倍数越大昼夜交替速度越快。1.0倍时，现实中1分钟大体对应游戏中的28分钟，因此，如果希望游戏中的昼夜交替周期与现实相似（1昼夜=24小时），可将该值设置为0.035', value: '1.000000', default_value: '1.000000', checkbox: false },
+            { key: 'DayTimeSpeedScale', description: '白天时间流逝的速度，该值为倍数，决定了日间时长，与NightTimeSpeedScale相关，倍数越小白天的时间就越长', value: '1.000000', default_value: '1.000000', checkbox: false },
+            { key: 'NightTimeSpeedScale', description: '夜晚时间流逝的速度，该值为倍数，决定了夜间时长，与DayTimeSpeedScale相关，倍数越小夜晚的时间就越长', value: '1.000000', default_value: '1.000000', checkbox: false },
+            { key: 'TribeNameChangeCooldown', description: '再次修改部落名称所需的冷却时间，单位为分钟', value: '15.000000', default_value: '', checkbox: false },
 
             // 属性
-            { key: 'PlayerDamageMultiplier', description: '玩家伤害倍数，倍数越高玩家打出的伤害越高', value: '1.00000', default_value: '1.00000', checkbox: false },
-            { key: 'PlayerResistanceMultiplier', description: '玩家承伤倍数，倍数越高，攻击行为对玩家造成的伤害越高', value: '1.00000', default_value: '1.00000', checkbox: false },
-            { key: 'PlayerCharacterWaterDrainMultiplier', description: '玩家的水资源消耗倍率，倍数越高，玩家单位时间内消耗水资源数量越高', value: '1.00000', default_value: '1.00000', checkbox: false },
-            { key: 'PlayerCharacterFoodDrainMultiplier', description: '玩家的食物消耗倍率，倍数越高，玩家单位时间内消耗食物数量越高', value: '1.00000', default_value: '1.00000', checkbox: false },
-            { key: 'PlayerCharacterStaminaDrainMultiplier', description: '玩家的耐力消耗倍率，倍数越高，玩家活动所消耗的耐力就越高', value: '1.00000', default_value: '1.00000', checkbox: false },
-            { key: 'PlayerCharacterHealthRecoveryMultiplier', description: '玩家生命值回复倍率，倍数越高，玩家单位时间内回复的生命值越高', value: '1.00000', default_value: '1.00000', checkbox: false },
-            { key: 'DinoDamageMultiplier', description: '恐龙伤害倍数，倍数越高恐龙打出的伤害越高', value: '1.00000', default_value: '1.00000', checkbox: false },
-            { key: 'DinoResistanceMultiplier', description: '恐龙承伤倍数，倍数越高，攻击行为对恐龙造成的伤害越高', value: '1.00000', default_value: '1.00000', checkbox: false },
-            { key: 'DinoCharacterFoodDrainMultiplier', description: '恐龙的食物消耗倍率，倍数越高，恐龙单位时间内消耗食物数量越高', value: '1.00000', default_value: '1.00000', checkbox: false },
-            { key: 'DinoCharacterStaminaDrainMultiplier', description: '恐龙的耐力消耗倍率，倍数越高，恐龙活动所消耗的耐力就越高', value: '1.00000', default_value: '1.00000', checkbox: false },
-            { key: 'DinoCharacterHealthRecoveryMultiplier', description: '恐龙生命值回复倍率，倍数越高，恐龙单位时间内回复的生命值越高', value: '1.00000', default_value: '1.00000', checkbox: false },
-            { key: 'StructureDamageMultiplier', description: '建筑物伤害倍数，如拒马、炮塔等，倍数越高建筑物对生物造成的伤害越高', value: '1.00000', default_value: '1.00000', checkbox: false },
-            { key: 'StructureResistanceMultiplier', description: '建筑物承伤倍数，如拒马、炮塔等，倍数越高，攻击行为对建筑物造成的伤害越高', value: '1.00000', default_value: '1.00000', checkbox: false },
-            { key: 'TamedDinoDamageMultiplier', description: '驯养生物伤害倍数，倍数越高驯养生物打出的伤害越高', value: '1.00000', default_value: '1.00000', checkbox: false },
-            { key: 'TamedDinoResistanceMultiplier', description: '驯养生物承伤倍数，倍数越高，攻击行为对驯养生物造成的伤害越高', value: '1.00000', default_value: '1.00000', checkbox: false },
+            { key: 'PlayerDamageMultiplier', description: '玩家伤害倍数，倍数越高玩家打出的伤害越高', value: '1.000000', default_value: '1.000000', checkbox: false },
+            { key: 'PlayerResistanceMultiplier', description: '玩家承伤倍数，倍数越高，攻击行为对玩家造成的伤害越高', value: '1.000000', default_value: '1.000000', checkbox: false },
+            { key: 'PlayerCharacterWaterDrainMultiplier', description: '玩家的水资源消耗倍率，倍数越高，玩家单位时间内消耗水资源数量越高', value: '1.000000', default_value: '1.000000', checkbox: false },
+            { key: 'PlayerCharacterFoodDrainMultiplier', description: '玩家的食物消耗倍率，倍数越高，玩家单位时间内消耗食物数量越高', value: '1.000000', default_value: '1.000000', checkbox: false },
+            { key: 'PlayerCharacterStaminaDrainMultiplier', description: '玩家的耐力消耗倍率，倍数越高，玩家活动所消耗的耐力就越高', value: '1.000000', default_value: '1.000000', checkbox: false },
+            { key: 'PlayerCharacterHealthRecoveryMultiplier', description: '玩家生命值回复倍率，倍数越高，玩家单位时间内回复的生命值越高', value: '1.000000', default_value: '1.000000', checkbox: false },
+            { key: 'DinoDamageMultiplier', description: '恐龙伤害倍数，倍数越高恐龙打出的伤害越高', value: '1.000000', default_value: '1.000000', checkbox: false },
+            { key: 'DinoResistanceMultiplier', description: '恐龙承伤倍数，倍数越高，攻击行为对恐龙造成的伤害越高', value: '1.000000', default_value: '1.000000', checkbox: false },
+            { key: 'DinoCharacterFoodDrainMultiplier', description: '恐龙的食物消耗倍率，倍数越高，恐龙单位时间内消耗食物数量越高', value: '1.000000', default_value: '1.000000', checkbox: false },
+            { key: 'DinoCharacterStaminaDrainMultiplier', description: '恐龙的耐力消耗倍率，倍数越高，恐龙活动所消耗的耐力就越高', value: '1.000000', default_value: '1.000000', checkbox: false },
+            { key: 'DinoCharacterHealthRecoveryMultiplier', description: '恐龙生命值回复倍率，倍数越高，恐龙单位时间内回复的生命值越高', value: '1.000000', default_value: '1.000000', checkbox: false },
+            { key: 'StructureDamageMultiplier', description: '建筑物伤害倍数，如拒马、炮塔等，倍数越高建筑物对生物造成的伤害越高', value: '1.000000', default_value: '1.000000', checkbox: false },
+            { key: 'StructureResistanceMultiplier', description: '建筑物承伤倍数，如拒马、炮塔等，倍数越高，攻击行为对建筑物造成的伤害越高', value: '1.000000', default_value: '1.000000', checkbox: false },
+            { key: 'TamedDinoDamageMultiplier', description: '驯养生物伤害倍数，倍数越高驯养生物打出的伤害越高', value: '1.000000', default_value: '1.000000', checkbox: false },
+            { key: 'TamedDinoResistanceMultiplier', description: '驯养生物承伤倍数，倍数越高，攻击行为对驯养生物造成的伤害越高', value: '1.000000', default_value: '1.000000', checkbox: false },
 
             // 数量
-            { key: 'MaxTamedDinos', description: '服务器中驯养生物的最大数量', value: 4000, default_value: 4000, checkbox: false },
-            { key: 'TheMaxStructuresInRange', description: '（需要帮助）指定一个区域内最多可以创建多少建筑（Specifies the maximum number of structures that can be constructed within a certain (currently hard-coded) range.）', value: 10500, default_value: 10500, checkbox: false },
-            { key: 'MaxPlatformSaddleStructureLimit', description: 'ARK中船/平台鞍生物的最大数量', value: 100, default_value: 100, checkbox: false },
-            { key: 'PerPlatformMaxStructuresMultiplier', description: '每个平台鞍/船上所能放置的建筑与家具的最大数量，该值为倍数，倍数越高，所能放置的物体越多', value: '1.00000', default_value: '1.00000', checkbox: false },
-            { key: 'DinoCountMultiplier', description: '恐龙数量，该值为倍数，倍数越高，游戏中的恐龙数量越多', value: '1.00000', default_value: '1.00000', checkbox: false },
-            { key: 'ItemStackSizeMultiplier', description: '单元格物品堆叠数量的倍数，倍数越高，单元格内能够堆叠的物品数量越多', value: '1.00000', default_value: '1.00000', checkbox: false },
-            { key: 'PlatformSaddleBuildAreaBoundsMultiplier', description: '平台鞍建筑区域面积倍数，倍数越高，建筑与平台鞍之间的距离就可以越远', value: '1.00000', default_value: '1.00000', checkbox: false },
-            { key: 'MaxPersonalTamedDinos', description: '每个部落所能拥有的最大驯养生物数量', value: '500', default_value: '500', checkbox: true},
+            { key: 'MaxTamedDinos', description: '服务器中驯养生物的最大数量', value: '4000.000000', default_value: '4000.000000', checkbox: false },
+            { key: 'DinoCountMultiplier', description: '恐龙总量倍数，倍数越高，游戏中的恐龙数量越多', value: '1.000000', default_value: '1.000000', checkbox: false },
+            { key: 'MaxPersonalTamedDinos', description: '每个部落所能拥有的最大驯养生物数量', value: '500.000000', default_value: '500.000000', checkbox: true},
+            { key: 'TheMaxStructuresInRange', description: '（建议用默认值，我也没弄懂这个选项的作用）指定一个区域内最多可以创建多少建筑（Specifies the maximum number of structures that can be constructed within a certain (currently hard-coded) range.）', value: '10500.000000', default_value: '', checkbox: false },
+            { key: 'ItemStackSizeMultiplier', description: '单元格物品堆叠数量的倍数，倍数越高，单元格内能够堆叠的物品数量越多', value: '1.000000', default_value: '', checkbox: false },
+            { key: 'MaxPlatformSaddleStructureLimit', description: '方舟中船/平台鞍生物的最大数量', value: '100.000000', default_value: '100.000000', checkbox: false },
+            { key: 'PerPlatformMaxStructuresMultiplier', description: '平台鞍建筑上限倍数，倍数越高，平台鞍上可以放置的建筑物数量越多', value: '1.000000', default_value: '', checkbox: false },
+            { key: 'PlatformSaddleBuildAreaBoundsMultiplier', description: '平台鞍建筑区域面积倍数，倍数越高，平台鞍可扩建的面积就越大', value: '1.000000', default_value: '', checkbox: false },
+            { key: 'StructurePreventResourceRadiusMultiplier', description: '建筑物周围禁止资源刷新的半径大小，该值为倍数，倍数越大半径越大', value: '1.000000', default_value: '', checkbox: true },
 
-            // 待整理
-            { key: 'AllowAnyoneBabyImprintCuddle', description: 'Use this if you want ANYONE to be able to "take care" of a Baby Dino (cuddle etc.), not just whomever Imprinted on it. ', value: 0, default_value: 0, checkbox: true},
-            { key: 'DisableImprintDinoBuff', description: 'Use this to disable the Dino Imprinting-Player Stat Bonus, if you don\'t like it (where whomever specifically imprinted on the Dino, and Raised it to have an Imprinting Quality, gets extra Damage/Resistance buff) ', value: 0, default_value: 0, checkbox: true},
+
+            // PVE设置
+            { key: 'AllowFlyerCarryPvE', description: 'PVE，允许玩家在骑乘飞行生物时抓取其他玩家或生物', value: 0, default_value: 0, checkbox: true },
+            { key: 'AllowCaveBuildingPvE', description: 'PVE，允许玩家在洞穴中建造建筑', value: 0, default_value: 0, checkbox: true },
+            { key: 'DisablePvEGamma', description: 'PVE，禁止玩家本地调整伽马值', value: 0, default_value: 0, checkbox: true },
+            { key: 'bDisableStructureDecayPvE', description: 'PVE，禁用建筑物自动损毁', value: 0, default_value: 0, checkbox: true },
+            { key: 'PvEStructureDecayPeriodMultiplier', description: 'PVE，建筑物自动损毁倒计时长的倍数，效果与取值范围未知', value: '1.000000', default_value: '1.000000', checkbox: false },
+            { key: 'DisableDinoDecayPvE', description: 'PVE，禁用已驯养生物自动放生', value: 0, default_value: 0, checkbox: true },
+            { key: 'PvEDinoDecayPeriodMultiplier', description: 'PVE，恐龙自动放生倒计时长的倍数，效果与取值范围未知', value: '1.000000', default_value: '', checkbox: false },
+            { key: 'PvEAllowStructuresAtSupplyDrops', description: 'PVE，允许在空投补给箱降落点附近建造建筑', value: 0, default_value: 0, checkbox: true },
+
+            // PVP设置
+            { key: 'PvPStructureDecay', description: 'PVP，启用建筑物自动损毁', value: 0, default_value: 0, checkbox: true },
+            { key: 'PvPDinoDecay', description: 'PVP，启用已驯养生物自动放生', value: 0, default_value: 0, checkbox: true },
+            { key: 'EnablePvPGamma', description: 'PVP，允许玩家本地调整伽马值', value: 0, default_value: 0, checkbox: true },
+            { key: 'PreventOfflinePvP', description: 'PVP，启用下线保护，当玩家或部落下线时防止被抄家', value: 0, default_value: -1, checkbox: true},
+            { key: 'PreventOfflinePvPInterval', description: 'PVP，下线保护等待时间，单位为秒，', value: '0.010000', default_value: '', checkbox: false},
+
+            // 杂项
+            { key: 'DisableImprintDinoBuff', description: '禁用恐龙留痕增益', value: 0, default_value: 0, checkbox: true},
+            { key: 'AllowAnyoneBabyImprintCuddle', description: '允许他人完成留痕任务', value: 0, default_value: 0, checkbox: true},
+            { key: 'PreventDiseases', description: '禁用疾病机制', value: 0, default_value: 0, checkbox: true },
+            { key: 'NonPermanentDiseases', description: '非永久性疾病，玩家重生后可被治愈', value: 0, default_value: 0, checkbox: true },
+            { key: 'AllowRaidDinoFeeding', description: '允许泰坦类恐龙进食', value: 0, default_value: -1, checkbox: true },
+            { key: 'RaidDinoCharacterFoodDrainMultiplier', description: '泰坦类恐龙食物消耗速度', value: '1.000000', default_value: '', checkbox: false },
+            { key: 'AllowFlyingStaminaRecovery', description: '飞行生物无需降落便可恢复耐力，前提是该生物不处于被骑乘的状态，恢复耐力时玩家可以站在该生物背上', value: 0, default_value: 0, checkbox: true },
             { key: 'bPassiveDefensesDamageRiderlessDinos', description: '拒马可以对野生生物与无人骑乘的生物造成伤害', value: 0, default_value: 0, checkbox: true },
             { key: 'AllowMultipleAttachedC4', description: '每个恐龙身上可以粘贴不止一个C4炸弹', value: 0, default_value: 0, checkbox: true },
-            { key: 'AllowFlyingStaminaRecovery', description: '飞行生物无需降落便可恢复耐力，前提是该生物不处于被骑乘的状态，恢复耐力时玩家可以站在该生物背上', value: 0, default_value: 0, checkbox: true },
             { key: 'ForceFlyerExplosives', description: '所有飞行生物身上贴着C4时依旧可以飞行，默认状态下只有风神翼龙和双足飞龙可以带着C4飞行', value: 0, default_value: 0, checkbox: true },
-            { key: '', description: '', value: 0, default_value: 0, checkbox: true },
-            { key: '', description: '', value: 0, default_value: 0, checkbox: true },
-            { key: '', description: '', value: 0, default_value: 0, checkbox: true },
-            { key: '', description: '', value: 0, default_value: 0, checkbox: true },
+            { key: 'OverrideStructurePlatformPrevention', description: '允许平台鞍上放置炮塔', value: 0, default_value: 0, checkbox: true },
+            { key: 'ForceAllowCaveFlyers', description: '强制允许洞穴飞行', value: 0, default_value: 0, checkbox: true },
+            { key: 'PreventTribeAlliances', description: '禁用部落联盟', value: 0, default_value: 0, checkbox: true },
+            { key: 'EnableExtraStructurePreventionVolumes', description: '扩大资源点附近禁造区域的大小，使用后可以完全禁止在特定资源点放置建筑物，例如孤岛中的山峰', value: 0, default_value: 0, checkbox: true },
+            { key: 'StructurePickupTimeAfterPlacement', description: '建筑物放置后多长时间内可以被捡起，单位为秒', value: '30.000000', default_value: '', checkbox: false },
+            { key: 'StructurePickupHoldDuration', description: 'used to specify the quick-pickup hold duration, use 0 to disable and have instant pickup ', value: '0.500000', default_value: '', checkbox: false },
+            { key: 'OxygenSwimSpeedStatMultiplier', description: '', value: '1.000000', default_value: '', checkbox: false },
+            { key: 'RCONPort', description: 'RCON的端口', value: '27020', default_value: '', checkbox: false },
+            { key: 'RCONServerGameLogBuffer', description: '通过RCON发送的游戏日志记录的行数', value: '600', default_value: '', checkbox: false },
 
-            // 上传与下载
-            { key: 'noTributeDownloads', description: '禁止从其他服务器下载生存者', value: 0, default_value: 0, checkbox: true },
+            // 上传与下载 All Complete
+            { key: 'NoTributeDownloads', description: '禁止下载贡品，禁止下载其他服务器上的物品、恐龙或者角色', value: 0, default_value: 0, checkbox: true },
             { key: 'CrossARKAllowForeignDinoDownloads', description: '允许下载畸变DLC中没有的生物到畸变DLC', value: 0, default_value: 0, checkbox: true },
             { key: 'PreventUploadSurvivors', description: '禁止上传生存者', value: 0, default_value: 0, checkbox: true},
             { key: 'PreventUploadItems', description: '禁止上传物品', value: 0, default_value: 0, checkbox: true},
             { key: 'PreventUploadDinos', description: '禁止上传恐龙', value: 0, default_value: 0, checkbox: true},
-            { key: 'PreventDownloadSurvivors', description: '禁止下载生存者', value: 0, default_value: 0, checkbox: true},
-            { key: 'PreventDownloadItems', description: '禁止下载物品', value: 0, default_value: 0, checkbox: true},
-            { key: 'PreventDownloadDinos', description: '禁止下载恐龙', value: 0, default_value: 0, checkbox: true},
+            { key: 'PreventDownloadSurvivors', description: '禁止下载其他服务器上的生存者', value: 0, default_value: 0, checkbox: true},
+            { key: 'PreventDownloadItems', description: '禁止下载其他服务器上的物品', value: 0, default_value: 0, checkbox: true},
+            { key: 'PreventDownloadDinos', description: '禁止下载其他服务器上的恐龙', value: 0, default_value: 0, checkbox: true},
 
-            // PVE设置
-            { key: 'AllowFlyerCarryPvE', description: 'PVE，允许玩家在骑乘飞行生物时抓取其他玩家或生物', value: 0, default_value: 0, checkbox: true },
-            { key: 'AllowCaveBuildingPvE', description: 'PVE，允许玩家在矿洞中建造建筑', value: 0, default_value: 0, checkbox: true },
-            { key: 'DisablePvEGamma', description: '（需要帮助）PVE，禁用Gamma（求大佬科普啥是Gamma）', value: 0, default_value: 0, checkbox: true },
-            { key: 'bDisableStructureDecayPvE', description: 'PVE，禁用玩家建筑自动损坏，否则建筑会在无人修理的情况下随时间自行发生损坏，至7天后彻底损毁', value: 0, default_value: 0, checkbox: true },
-            { key: 'PvEStructureDecayPeriodMultiplier', description: 'PVE，玩家建筑的自动损坏速率，该值为倍数，效果与取值范围未知', value: '1.00000', default_value: '1.00000', checkbox: false },
-            { key: 'DisableDinoDecayPvE', description: 'PVE，禁用7天自动撤销玩家对已驯养生物的所有权', value: 0, default_value: 0, checkbox: true },
-            { key: 'PvEDinoDecayPeriodMultiplier', description: 'PVE，玩家驯养生物的自动放生速率，该值为倍数，效果与取值范围未知', value: '1.00000', default_value: '1.00000', checkbox: false },
-            { key: 'PvEAllowStructuresAtSupplyDrops', description: 'PVE，允许在空投补给箱降落点附近建造建筑', value: 0, default_value: 0, checkbox: true },
-
-            // PVP设置
-            { key: 'PvPStructureDecay', description: 'PVP，启用玩家建筑自动损坏，建筑会随时间自行发生损坏', value: 0, default_value: 0, checkbox: true },
-            { key: 'EnablePvPGamma', description: '（需要帮助）PVP，启用Gamma（求大佬科普啥是Gamma）', value: 0, default_value: 0, checkbox: true },
-            { key: 'PreventOfflinePvP', description: 'PVP，当驯养生物和建筑物的所有者离线后，驯养生物和建筑物处于无敌状态', value: 0, default_value: 0, checkbox: true},
-            { key: 'PreventOfflinePvPInterval', description: 'PVP，自所有者离线到生物/建筑物进入无敌状态之间的等待时长，单位为秒，', value: 0, default_value: 0, checkbox: true},
-
-            // 基本用不上
+            // 选项的作用有待考究
             { key: 'TributeItemExpirationSeconds', description: '在泰克终端上传的物品的过期时间，单位不详', value: '86400', default_value: '86400', checkbox: false },
             { key: 'TributeDinoExpirationSeconds', description: '在泰克终端上传的生物的过期时间，单位不详', value: '86400', default_value: '86400', checkbox: false },
             { key: 'TributeCharacterExpirationSeconds', description: '在泰克终端上传的玩家的过期时间，单位不详', value: '86400', default_value: '86400', checkbox: false },
@@ -171,7 +214,7 @@
         {
           block_name: '[/script/engine.gamesession]',
           items: [
-            { key: 'MaxPlayers', description: '服务器能同时容纳的最大玩家数量', value: '70', default_value: '70', checkbox: false},
+            { key: 'MaxPlayers', description: '服务器能同时容纳的最大玩家数量', value: '70', default_value: '', checkbox: false},
           ],
         },
       ],
